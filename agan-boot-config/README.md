@@ -16,7 +16,7 @@ server.port=9090
 server.port=${random.int[1024,9999]}
 ```
 
-##四：自定义属性配置
+## 四、自定义属性配置
 讲自定义属性配置，就必须讲解@value注解。<br>
 @value的作用是：为了简化读取properties文件中的配置值，spring支持@value注解的方式来获取，这种方式大大简化了项目配置，提高业务中的灵活性。<br>
 在application.properties的文件下，加入如下配置
@@ -39,7 +39,7 @@ public class HelloController {
 }
 ```
 
-##五：课后练习
+## 五、课后练习
 自己搭建一个springboot项目,实现以下2个功能：<br>
 1.springboot的启动端口，设置为2048到8096的随机端口。<br>
 2.在application.properties的文件下，加入如下配置<br>
