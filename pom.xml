@@ -24,7 +24,7 @@
     </dependencies>
 
     <modules>
-        <module>agan-boot-log</module>
+        <module>agan-boot-async</module>
     </modules>
 
     <build>
