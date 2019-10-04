@@ -1,5 +1,0 @@
-server:
-  port: 9090
-
-agan:
-  msg: hi,hello world!!
