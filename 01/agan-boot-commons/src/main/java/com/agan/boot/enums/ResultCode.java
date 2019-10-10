@@ -4,7 +4,12 @@ package com.agan.boot.enums;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * @author 阿甘
+ * @see https://study.163.com/course/courseMain.htm?courseId=1004348001&share=2&shareId=1016671292
+ * @version 1.0
+ * 注：如有任何疑问欢迎加入QQ群977438372 进行讨论
+ */
 public enum ResultCode  {
 
 	/* 成功状态码 */

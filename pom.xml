@@ -23,9 +23,8 @@
     </dependencies>
 
     <modules>
-        <module>02/agan-boot-ioc</module>
-        <module>02/agan-boot-ioc-factories</module>
-        <module>02/agan-boot-ioc-factories-core</module>
+        <module>01/agan-boot-commons</module>
+
     </modules>
 
     <build>
