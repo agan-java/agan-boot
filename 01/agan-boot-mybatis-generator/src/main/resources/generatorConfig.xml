@@ -39,7 +39,7 @@
 
 
         <!-- 设置数据库表名 -->
-        <table tableName="users" domainObjectName="User">
+        <table tableName="content" domainObjectName="Content">
             <generatedKey column="id" sqlStatement="JDBC"/>
         </table>
     </context>

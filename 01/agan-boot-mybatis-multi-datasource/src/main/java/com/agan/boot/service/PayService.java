@@ -26,7 +26,7 @@ public class PayService {
      * @param userId
      * @param account
      */
-    @Transactional(rollbackFor = Exception.class)
+    @Transactional(rollbackFor = Exception.class,transactionManager="accountTransactionManager")
     public void payAccount(int userId,int account) {
         CapitalAccount ca=new CapitalAccount();
         ca.setUserId(userId);
@@ -43,7 +43,7 @@ public class PayService {
      * @param userId
      * @param account
      */
-    @Transactional(rollbackFor = Exception.class)
+    @Transactional(rollbackFor = Exception.class,transactionManager="redTransactionManager")
     public void payRedPacket(int userId,int account) {
         RedPacketAccount red= new RedPacketAccount();
         red.setUserId(userId);
@@ -56,7 +56,6 @@ public class PayService {
         //int i=9/0;
     }
 
-    @Transactional(rollbackFor = Exception.class)
     public void pay(int fromUserId,int toUserId,int account){
         //账户余额 减钱
         this.payAccount(fromUserId,account);

@@ -54,7 +54,7 @@ public class RedAccountDataSourceConfiguration {
     /**
      *  配置事务
      */
-    @Bean(name="transactionManager")
+    @Bean(name="redTransactionManager")
     public DataSourceTransactionManager transactionManager(){
         return new DataSourceTransactionManager(redPacketDataSource);
     }

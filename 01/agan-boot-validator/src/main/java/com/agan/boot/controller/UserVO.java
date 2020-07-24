@@ -1,6 +1,7 @@
 package com.agan.boot.controller;
 
 import com.agan.boot.annotation.Phone;
+import com.agan.boot.annotation.Sex;
 import lombok.Data;
 import org.hibernate.validator.constraints.Length;
 
@@ -33,10 +34,13 @@ public class UserVO {
     @Phone
     private String phone;
 
+
+
     @Pattern(regexp = "^(\\d{18,18}|\\d{15,15}|(\\d{17,17}[x|X]))$", message = "身份证格式错误")
     private String idCard;
-
+    @Sex
     private Byte sex;
+
     private Byte deleted;
     private Date updateTime;
     private Date createTime;

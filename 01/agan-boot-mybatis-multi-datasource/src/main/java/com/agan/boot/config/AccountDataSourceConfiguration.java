@@ -55,7 +55,7 @@ public class AccountDataSourceConfiguration {
     /**
      *  配置事务
      */
-    @Bean(name="transactionManager")
+    @Bean(name="accountTransactionManager")
     public DataSourceTransactionManager transactionManager(){
         return new DataSourceTransactionManager(accountDataSource);
     }

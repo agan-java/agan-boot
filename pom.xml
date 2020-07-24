@@ -24,7 +24,8 @@
 
     <modules>
         <module>01/agan-boot-commons</module>
-
+        <module>01/agan-boot-mybatis-generator</module>
+        <module>01/agan-boot-mybatis-multi-datasource</module>
     </modules>
 
     <build>
